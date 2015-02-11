@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
 
 public class Eval
 {
@@ -11,7 +11,7 @@ public class Eval
     public string gpa { get; set; }
     public string gpaMajor { get; set; }
     public string gpaMinor { get; set; }
-    public string totalHours{ get; set; }
+    public string totalHours { get; set; }
     public string totalHoursRequired { get; set; }
     public string upperLevelHours { get; set; }
     public string lowerLevelHours { get; set; }
