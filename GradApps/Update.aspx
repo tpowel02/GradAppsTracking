@@ -1,14 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Update.aspx.cs" Inherits="Default2" %>
+﻿<%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="Update.aspx.cs" Inherits="Default2" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <link href="styles/Form.css" rel="stylesheet" type="text/css" media="all" />
-    <title>Update Student</title>
-</head>
-<body>
-    <form id="form1" runat="server">
+ <asp:Content ContentPlaceHolderID="Main" runat="server">
+    <link rel="stylesheet" href="styles/Form.css" type="text/css" />
     <div class="update">
         <div class="title">Update Student Record</div>
         <br />
@@ -54,6 +47,4 @@
         <asp:Button ID="done" class="bluebutton donebutton" runat="server" Text="Done" Width="95px" OnClick="done_Click" />
         <asp:Button ID="cancel" class="bluebutton cancelbutton" runat="server" Text="Cancel" Width="95px" OnClick="cancel_Click" />
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>
