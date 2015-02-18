@@ -1,7 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="FacultyMain.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ContentPlaceHolderID="Main" runat="server">
-    <link rel="stylesheet" href="styles/Main.css" type="text/css" />
     <p>&nbsp;</p>
         <div class="queue">
             <div class="title">UAFS Graduation Application Tracking System</div>

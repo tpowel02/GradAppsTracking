@@ -1,6 +1,20 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="True" CodeFile="StudentMain.aspx.cs" Inherits="_Default" %>
-<asp:Content ContentPlaceHolderID="Main" runat="server">
-        <link rel="stylesheet" href="styles/Main.css" type="text/css" />
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="StudentMain.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="styles/Main.css" rel="stylesheet" type="text/css" media="all" />
+    <title>Tracking Queue</title>
+    <style type="text/css">
+        .Grid {}
+    </style>
+</head>
+<body>
+    <header><asp:image ImageUrl="images/logo.png" runat="server"></asp:image><asp:image ImageUrl="images/title.png" runat="server"></asp:image></header>
+    <form id="form1" runat="server">
+    <p>
+        &nbsp;</p>
         <div class="queue">
             <div class="title">UAFS Graduation Application Tracking System</div>
             <br />
@@ -33,4 +47,6 @@
             <br />
             <asp:Button class="bluebutton exitbutton" runat="server" Text="Exit" Width="95px" OnClick="Unnamed3_Click" />
         </div>
-</asp:Content>
+    </form>
+    </body>
+</html>
