@@ -1,14 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="VerifyPage.aspx.cs" Inherits="Default2" %>
+﻿<%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="VerifyPage.aspx.cs" Inherits="Default2" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <link href="styles/Verify.css" rel="stylesheet" type="text/css" media="all" />
-    <title>Verify Record</title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ContentPlaceHolderID="Main" runat="server">
+    <link rel="stylesheet" href="styles/Verify.css" type="text/css" />
     <div class="verify">
         <div class="title">Student Evaluation Results</div>
         <br />
@@ -72,6 +66,4 @@
         <br />
         <asp:Button ID="done" class="bluebutton donebutton" runat="server" Text="Done" Width="95px" OnClick="done_Click" />
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>
