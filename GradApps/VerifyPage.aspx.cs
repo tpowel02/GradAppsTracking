@@ -12,7 +12,7 @@ public partial class Default2 : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         Eval eval = new Eval();
-
+        //ldfkjdslfkjsd
         eval.id="@00228342";
         eval.major = "IT: Programming";
         eval.minor = "N/A";
