@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="StudentMain.aspx.cs" Inherits="_Default" %>
 
+<!-- view - student main -->
+
 <asp:Content ContentPlaceHolderID="Main" runat="server">
     <link rel="stylesheet" href="styles/Student.css" type="text/css" />
     <div class="verify">

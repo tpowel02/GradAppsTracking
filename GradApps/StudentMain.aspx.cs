@@ -10,6 +10,8 @@ using System.Web.UI.WebControls;
 
 public partial class _Default : System.Web.UI.Page
 {
+    // student main page
+
     //DataTable dt = new DataTable();
     //protected void Page_Load(object sender, EventArgs e)
     //{
@@ -28,6 +30,8 @@ public partial class _Default : System.Web.UI.Page
     //    GridView1.DataBind();
     //}
 
+    //---------------------------------------------------------------------------------------------
+
     //protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     //{
     //    foreach (GridViewRow row in GridView1.Rows)
@@ -44,17 +48,28 @@ public partial class _Default : System.Web.UI.Page
     //        }
     //    }
     //}
+
+    //---------------------------------------------------------------------------------------------
+
     //protected void Unnamed2_Click(object sender, EventArgs e)
     //{
     //    //Session["Item"] = _list[list.SelectedIndex];
     //    //Response.Redirect("Update.aspx");
     //}
+
+    //---------------------------------------------------------------------------------------------
+
     //protected void Unnamed3_Click(object sender, EventArgs e)
     //{
     //    Server.Transfer("StudentLogin.aspx");
     //}
+
+    //---------------------------------------------------------------------------------------------
+
     protected void done_Click(object sender, EventArgs e)
     {
+        // transfers to faculty main page - when finished will log student out
+
         Server.Transfer("FacultyMain.aspx");
     }
 }

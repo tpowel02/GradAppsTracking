@@ -5,6 +5,8 @@ using System.Text;
 
 public class Eval
 {
+    // gets and sets application information from the database
+
     public string id { get; set; }
     public string major { get; set; }
     public string minor { get; set; }

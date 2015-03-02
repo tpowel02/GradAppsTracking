@@ -10,9 +10,12 @@ using System.Web.UI.WebControls;
 
 public partial class _Default : System.Web.UI.Page
 {
+    // faculty main page
+
     DataTable dt = new DataTable();
     protected void Page_Load(object sender, EventArgs e)
     {
+        // this is test data - finished code will pull from the database
 
         dt.Columns.AddRange(new DataColumn[11] { new DataColumn("Status"), new DataColumn("degreeEval"),  new DataColumn("dateSubmitted"), new DataColumn("Major"), new DataColumn("studentName"), 
             new DataColumn("advisor"), new DataColumn("deptHead"), new DataColumn("advisorApproval"), new DataColumn("deptHeadApproval"), 
@@ -39,7 +42,9 @@ public partial class _Default : System.Web.UI.Page
         GridView1.DataBind();
     }
 
-    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+    //---------------------------------------------------------------------------------------------
+
+    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)  // will change later
     {
         foreach (GridViewRow row in GridView1.Rows)
         {
@@ -55,26 +60,51 @@ public partial class _Default : System.Web.UI.Page
             }
         }
     }
+
+    //---------------------------------------------------------------------------------------------
+
     protected void Unnamed2_Click(object sender, EventArgs e)
     {
-        Server.Transfer("Update.aspx");
+        // transfers to update page
+
+        Server.Transfer("Update.aspx"); 
         //Session["Item"] = _list[list.SelectedIndex];
         //Response.Redirect("Update.aspx");
     }
+
+    //---------------------------------------------------------------------------------------------
+
     protected void Unnamed7_Click(object sender, EventArgs e)
     {
+        // transfers to faculty login page
+
         Server.Transfer("FacultyLogin.aspx");
     }
+
+    //---------------------------------------------------------------------------------------------
+
     protected void Unnamed6_Click(object sender, EventArgs e)
     {
+        // transfers to verify page
+
         Server.Transfer("VerifyPage.aspx");
     }
+
+    //---------------------------------------------------------------------------------------------
+
     protected void Button1_Click(object sender, EventArgs e)
     {
+        // transfers to upload page
+
         Server.Transfer("Upload.aspx");
     }
+
+    //---------------------------------------------------------------------------------------------
+
     protected void Unnamed3_Click(object sender, EventArgs e)
     {
+        // transfers to new entry page
+
         Server.Transfer("New.aspx");
     }
 }

@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="New.aspx.cs" Inherits="Default2" %>
 
+<!-- form - new application -->
+
 <asp:Content ContentPlaceHolderID="Main" runat="server">
     <div class="update">
         <div class="title">Add Item</div>

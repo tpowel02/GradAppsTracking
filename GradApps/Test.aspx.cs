@@ -8,14 +8,19 @@ using System.Web.UI.WebControls;
 
 public partial class Test : System.Web.UI.Page
 {
+    // test connection string page
 
     protected void Page_Load(object sender, EventArgs e)
     {
        
     }
-    
+
+    //---------------------------------------------------------------------------------------------
+
     private static SqlConnection GetConnection()
     {
+        // test connection to database
+
         var connectionString = new SqlConnectionStringBuilder
         {
             DataSource = "",
