@@ -1,7 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="New.aspx.cs" Inherits="Default2" %>
 
 <asp:Content ContentPlaceHolderID="Main" runat="server">
-    <form id="form1" runat="server">
     <div class="update">
         <div class="title">Add Item</div>
         <br />
@@ -54,5 +53,4 @@
         <asp:Button ID="done" class="bluebutton donebutton" runat="server" Text="Done" Width="95px" OnClick="done_Click" />
         <asp:Button ID="cancel" class="bluebutton cancelbutton" runat="server" Text="Cancel" Width="95px" OnClick="cancel_Click" />
     </div>
-    </form>
 </asp:Content>
