@@ -1,14 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Upload.aspx.cs" Inherits="Upload" %>
+﻿<%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="Upload.aspx.cs" Inherits="Upload" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Upload Degree Evaluation</title>
-    <link href="styles/Main.css" rel="stylesheet" type="text/css" media="all" />
-</head>
-<body>
-    <header><asp:image ImageUrl="images/logo.png" runat="server"></asp:image><asp:image ImageUrl="images/title.png" runat="server"></asp:image></header>
+<asp:Content ContentPlaceHolderID="Main" runat="server">
        
     <h1>Upload Degree Evaluation for Selected Student:</h1> 
  
@@ -28,5 +20,4 @@
     
     </div>
     </form>
-</body>
-</html>
+</asp:Content>

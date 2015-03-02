@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="VerifyPage.aspx.cs" Inherits="Default2" %>
 
-
 <asp:Content ContentPlaceHolderID="Main" runat="server">
     <link rel="stylesheet" href="styles/Verify.css" type="text/css" />
     <div class="verify">
