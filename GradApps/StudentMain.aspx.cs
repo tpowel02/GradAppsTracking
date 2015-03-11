@@ -11,23 +11,24 @@ using System.Web.UI.WebControls;
 public partial class _Default : System.Web.UI.Page
 {
     // student main page
+    /*
+    DataTable dt = new DataTable();
+    protected void Page_Load(object sender, EventArgs e)
+    {
 
-    //DataTable dt = new DataTable();
-    //protected void Page_Load(object sender, EventArgs e)
-    //{
+        dt.Columns.AddRange(new DataColumn[10] { new DataColumn("Status"), new DataColumn("dateSubmitted"), 
+            new DataColumn("Major"), new DataColumn("studentName"), new DataColumn("advisor"), 
+            new DataColumn("deptHead"), new DataColumn("advisorApproval"), new DataColumn("deptHeadApproval"), 
+            new DataColumn("deanApproval"), new DataColumn("recordsApproval") });
 
-    //    dt.Columns.AddRange(new DataColumn[10] { new DataColumn("Status"), new DataColumn("dateSubmitted"), 
-    //        new DataColumn("Major"), new DataColumn("studentName"), new DataColumn("advisor"), 
-    //        new DataColumn("deptHead"), new DataColumn("advisorApproval"), new DataColumn("deptHeadApproval"), 
-    //        new DataColumn("deanApproval"), new DataColumn("recordsApproval") });
+        dt.Rows.Add("Pending", DateTime.Now, "IT Programming", "Trent Powell", "Donna Wright", "Rick Massengale", true, false, false, false);
+        //dt.Rows.Add("Pending", DateTime.Now, "IT Database", "Michael Samuhasilp", "Janet Renwick", "Rick Massengale", true, false, false, true, false);
+        //dt.Rows.Add("Complete", DateTime.Now, "IT Networking", "Andrew Yang", "Donna Wright", "Rick Massengale", true, true, true, true, true);
+        //dt.Rows.Add("Complete", DateTime.Now, "IT Programming", "Philip Gammill", "JoAnna Chandler", "Rick Massengale", true, true, true, true, true);
 
-    //    dt.Rows.Add("Pending", DateTime.Now, "IT Programming", "Trent Powell", "Donna Wright", "Rick Massengale", true, false, false, false);
-    //    //dt.Rows.Add("Pending", DateTime.Now, "IT Database", "Michael Samuhasilp", "Janet Renwick", "Rick Massengale", true, false, false, true, false);
-    //    //dt.Rows.Add("Complete", DateTime.Now, "IT Networking", "Andrew Yang", "Donna Wright", "Rick Massengale", true, true, true, true, true);
-    //    //dt.Rows.Add("Complete", DateTime.Now, "IT Programming", "Philip Gammill", "JoAnna Chandler", "Rick Massengale", true, true, true, true, true);
-
-    //    GridView1.DataSource = dt;
-    //    GridView1.DataBind();
+        GridView1.DataSource = dt;
+        GridView1.DataBind();
+     * */
     //}
 
     //---------------------------------------------------------------------------------------------

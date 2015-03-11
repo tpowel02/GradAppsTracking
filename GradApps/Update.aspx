@@ -1,8 +1,9 @@
 ﻿<%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="Update.aspx.cs" Inherits="Default2" %>
 
-<!-- form - update application -->
+
 
 <asp:Content ContentPlaceHolderID="Main" runat="server">
+    <!-- form - update application -->
     <div class="update">
         <div class="title">Update Student Record</div>
         <br />

@@ -1,8 +1,9 @@
 ﻿<%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="VerifyPage.aspx.cs" Inherits="Default2" %>
 
-<!-- view - verify application information -->
+
 
 <asp:Content ContentPlaceHolderID="Main" runat="server">
+    <!-- view - verify application information -->
     <link rel="stylesheet" href="styles/Verify.css" type="text/css" />
     <div class="verify">
         <div class="title">Student Evaluation Results</div>

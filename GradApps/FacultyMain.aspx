@@ -1,8 +1,9 @@
 ﻿<%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="FacultyMain.aspx.cs" Inherits="_Default" %>
 
-<!-- view - faculty main -->
+
 
 <asp:Content ContentPlaceHolderID="Main" runat="server">
+    <!-- view - faculty main -->
     <p>&nbsp;</p>
         <div class="queue">
             <div class="title">UAFS Graduation Application Tracking System</div>
