@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,80 +13,66 @@ public partial class StudentView : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        //For testing purposes. Adds students to student class.
+        //                                                                                         Jarrod Lee - 4/6/15 - start
+        DataTable dt = new DataTable();
         Student student = new Student();
-        student.name = "Katie Tran";
-        student.id = "@12345678";
-        student.major = "Computer Programming";
-        student.minor = "Studio Art";
-        student.dateSubmitted = "3/14/2015";
-        student.status = "Not Approved";
-        student.advisorApproval = true;
-        student.deptApproval = true;
-        student.deanApproval = false;
-        student.recordsApproval = false;
+        dt = DB.getInfo();
+        foreach (DataRow row in dt.Rows)
+        {
 
-        _list.Add(student);
-
-        student = new Student();
-        student.name = "Terry Gross";
-        student.id = "@12349999";
-        student.major = "Communications";
-        student.minor = "None";
-        student.dateSubmitted = "3/14/2015";
-        student.status = "Not Approved";
-        student.advisorApproval = false;
-        student.deptApproval = false;
-        student.deanApproval = false;
-        student.recordsApproval = false;
-
-        _list.Add(student);
-
-        student = new Student();
-        student.name = "Scott Smith";
-        student.id = "@98765432";
-        student.major = "Philosophy";
-        student.minor = "Spanish";
-        student.dateSubmitted = "3/14/2014";
-        student.status = "Approved";
-        student.advisorApproval = true;
-        student.deptApproval = true;
-        student.deanApproval = true;
-        student.recordsApproval = true;
-
+            student.name = row[0].ToString();
+            student.id = row[1].ToString();
+            student.major = row[2].ToString();
+            student.dateSubmitted = row[3].ToString();
+            student.status = row[4].ToString();
+            student.advisorApproval = row[5].ToString();
+            student.deptApproval = row[6].ToString();
+            student.deanApproval = row[7].ToString();
+            student.recordsApproval = row[8].ToString();
+            student.msg = " ";
+        }
         _list.Add(student);
 
         loadStudent();
+         
     }
 
     private void loadStudent()
     {
-        //For testing purposes. Randomly loads a student.
-
-        Random rnd = new Random();
         Student student = new Student();
+        student = _list[0];
 
-        student = _list[rnd.Next(0, 3)];
+        if (student.name == null)
+        {
+            student.msg = "<font color='red'>** Application Not Submitted **</font>";
+            msg.Text = student.msg;
+        } 
+        if (DB.g_id == 0)
+        {
+            student.msg = "<font color='red'>* * * * * Not Logged In * * * * *</font>";
+            msg.Text = student.msg;
+        }
 
         name.Text = student.name;
         id.Text = student.id;
         major.Text = student.major;
-        //minor.Text = student.minor;
         dateSubmitted.Text = student.dateSubmitted;
         status.Text = student.status;
+        msg.Text = student.msg;
 
-        if (student.advisorApproval == true)
+        if (student.advisorApproval == "Y")
             imgAdvisor.ImageUrl = "~/images/tick-icon.gif";
-        if (student.deptApproval == true)
+        if (student.deptApproval == "Y")
             imgDept.ImageUrl = "~/images/tick-icon.gif";
-        if (student.deanApproval == true)
+        if (student.deanApproval == "Y")
             imgDean.ImageUrl = "~/images/tick-icon.gif";
-        if (student.recordsApproval == true)
+        if (student.recordsApproval == "Y")
             imgRecords.ImageUrl = "~/images/tick-icon.gif";
-
+       
     }
     protected void done_Click(object sender, EventArgs e)
     {
         Server.Transfer("StudentLogin.aspx");
     }
+    //                                                                                             Jarrod Lee - 4/6/15 - Finish
 }

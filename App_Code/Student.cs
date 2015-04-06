@@ -15,10 +15,13 @@ public class Student
         public string minor { get; set; }
         public string dateSubmitted { get; set; }
         public string status { get; set; }
-        public bool   advisorApproval { get; set; }
-        public bool   deptApproval { get; set; }
-        public bool   deanApproval { get; set; }
-        public bool   recordsApproval { get; set; }
+        //                                                                                         Jarrod Lee - 4/6/15 - Start
+        public string msg { get; set; }
+        //                                                                                         Jarrod Lee - 4/6/15 - Finish
+        public string   advisorApproval { get; set; }
+        public string   deptApproval { get; set; }
+        public string   deanApproval { get; set; }
+        public string   recordsApproval { get; set; }
 
 
 }

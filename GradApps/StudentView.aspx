@@ -5,9 +5,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" Runat="Server">
     <link rel="stylesheet" href="styles/Student.css" type="text/css" />
 <div class="verify">
-        <div class="title">Your Degree Status</div>
+        <div class="title">Your Application Status</div>
         <br />
-        <div class="container1" style="width: 200px">
+        <div class="container1" style="width: 200px;margin-bottom:10px">
            Welcome <asp:Label id="name" runat="server" ReadOnly="True" DataField="studentName"></asp:Label>
             <br />
             <br />
@@ -37,8 +37,11 @@
             <br />
         </div>
         <br />
-    <br />
-        <asp:Button ID="done" class="bluebutton donebutton" runat="server" Text="Log Off" Width="105px" OnClick="done_Click" />
+        <!--                                                                                         Jarrod Lee - 4/6/15 - Start -->
+        <asp:Label ID="msg" runat="server" ReadOnly="True" Datafield="msg" Style="text-align:center"></asp:Label>
+        <!--                                                                                         Jarrod Lee - 4/6/15 - Finish -->
+        <br />
+        <asp:Button ID="done" class="bluebutton donebutton" runat="server" Text="Log Off" Width="105px" Style="margin-top:10px;margin-left:52px" OnClick="done_Click" />
     </div>
 </asp:Content>
 
