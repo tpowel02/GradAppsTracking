@@ -20,15 +20,16 @@ public partial class StudentView : System.Web.UI.Page
         foreach (DataRow row in dt.Rows)
         {
 
-            student.name = row[0].ToString();
-            student.id = row[1].ToString();
-            student.major = row[2].ToString();
-            student.dateSubmitted = row[3].ToString();
-            student.status = row[4].ToString();
+            student.name            = row[0].ToString();
+            student.id              = row[1].ToString();
+            student.major           = row[2].ToString();
+            student.dateSubmitted   = row[3].ToString();
+            student.status          = row[4].ToString();
             student.advisorApproval = row[5].ToString();
-            student.deptApproval = row[6].ToString();
-            student.deanApproval = row[7].ToString();
+            student.deptApproval    = row[6].ToString();
+            student.deanApproval    = row[7].ToString();
             student.recordsApproval = row[8].ToString();
+            student.advisorEmail  = row[9].ToString();
             student.msg = " ";
         }
         _list.Add(student);
@@ -58,6 +59,7 @@ public partial class StudentView : System.Web.UI.Page
         major.Text = student.major;
         dateSubmitted.Text = student.dateSubmitted;
         status.Text = student.status;
+        email.Text = student.advisorEmail;
         msg.Text = student.msg;
 
         if (student.advisorApproval == "Y")

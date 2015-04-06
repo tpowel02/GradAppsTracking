@@ -35,6 +35,8 @@
             <asp:Image ID="imgRecords" runat="server" ImageUrl="~/images/cross-icon.gif" />
             <asp:Label ID="Label4" runat="server" Text=" Records Office Finalized"></asp:Label>
             <br />
+            <br />
+            Advisor Email: <asp:Label id="email" runat="server" ReadOnly="True" DataField="advisorEmail"></asp:Label>
         </div>
         <br />
         <!--                                                                                         Jarrod Lee - 4/6/15 - Start -->
