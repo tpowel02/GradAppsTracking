@@ -10,13 +10,11 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <header><asp:image ImageUrl="images/logo.png" runat="server"></asp:image><asp:image ImageUrl="images/title.png" runat="server"></asp:image></header>
+    <header><%--<asp:image ImageUrl="images/logo.png" runat="server"></asp:image><asp:image ImageUrl="images/title.png" runat="server"></asp:image>--%></header>
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder id="Main" runat="server">
-        <asp:HyperLink ID="HyperLink1" runat="server" Text="Tracking Queue" NavigateUrl="~/CustomerDisplay.aspx" Width="150px"></asp:HyperLink>
-        <asp:HyperLink ID="HyperLink2" runat="server" Text="Complete Survey" NavigateUrl="~/CustomerSurvey.aspx" Width="150px"></asp:HyperLink>
-        <asp:HyperLink ID="HyperLink3" runat="server" Text="Contact Us" NavigateUrl="~/ContactUs.aspx" Width="150px"></asp:HyperLink>
+      
         </asp:ContentPlaceHolder>
     </div>
     </form>
