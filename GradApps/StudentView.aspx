@@ -41,7 +41,7 @@
         <asp:Label ID="msg" runat="server" ReadOnly="True" Datafield="msg" Style="width:200px;margin-left:5px;text-align:center"></asp:Label>
         <!--                                                                                         Jarrod Lee - 4/6/15 - Finish -->
         <br />
-        <asp:Button ID="done" class="bluebutton donebutton" runat="server" Text="Log Off" Width="105px" Style="margin-top:10px;margin-left:52px" OnClick="done_Click" />
+        <asp:Button ID="done" class="bluebutton donebutton" runat="server" Text="Log Off" Width="105px" Style="margin-top:10px;margin-left:54px" OnClick="done_Click" />
     </div>
 </asp:Content>
 

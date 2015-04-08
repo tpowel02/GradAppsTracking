@@ -71,7 +71,7 @@ public class DB
         StringBuilder query = new StringBuilder();
         DataTable table = new DataTable();
         query.Append("SELECT (student.first_name+' '+student.last_name) AS Student_Name, "
-                    + "grad_app.student_id, major.major_name, grad_app.date_submitted, grad_app.status, "
+                    + "student.student_id, major.major_name, grad_app.date_submitted, grad_app.status, "
                     + "grad_app.advisor_approval, grad_app.dept_chair_approval, "
                     + "grad_app.dean_approval, grad_app.records_approval, "
                     +"faculty.email ");
