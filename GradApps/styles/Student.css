@@ -4,17 +4,20 @@
 	font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
 }
-.container1 {
+.container1 
+{
 	padding: 10px;
     border: 1px solid #cdcdcd;
     float:left;
 }
-.container2 {
+.container2 
+{
 	padding: 10px;
     border: 1px solid #cdcdcd;
     float:right;
 }
-.container3 {
+.container3 
+{
 	padding: 10px;
     border: 1px solid #cdcdcd;
     clear:both;
@@ -43,7 +46,8 @@
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
-.title {
+.title 
+{
     background: rgb(241,241,241);
     border-bottom: 1px solid #cdcdcd;
 	padding: 1em;

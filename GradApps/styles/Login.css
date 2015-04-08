@@ -4,13 +4,15 @@
 	font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
 }
-.container1 {
+.container1 
+{
     background-color: white;
 	padding: 10px;
     border: 1px solid #cdcdcd;
     float:left;
 }
-.container2 {
+.container2 
+{
     background-color: white;
 	padding: 10px;
     border: 1px solid #cdcdcd;
@@ -18,7 +20,8 @@
     float:none;
     width: 232px;
 }
-.title {
+.title 
+{
     background: rgb(241,241,241);
     border-bottom: 1px solid #cdcdcd;
 	padding: 1em;
