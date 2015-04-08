@@ -1,6 +1,6 @@
 ﻿body 
 {
-	background:url(images/1.jpg) 100% 100%;
+	background:url(../images/1.jpg) 100% 100%;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
 }
@@ -23,7 +23,7 @@
 	padding: 7px 21px;
 	color: #FFF;
 	font-family: 'Open Sans', sans-serif;
-	float: left;
+	float: right;
 	margin-left: 0px;
 	cursor: pointer;
 	outline: none;

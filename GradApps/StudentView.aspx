@@ -1,13 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="StudentView.aspx.cs" Inherits="StudentView" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" Runat="Server">
     <link rel="stylesheet" href="styles/Student.css" type="text/css" />
 <div class="verify">
         <div class="title">Your Application Status</div>
         <br />
-        <div class="container1" style="width: 200px;margin-bottom:10px">
+        <div class="container2" style="width: 200px;margin-bottom:10px">
            Welcome <asp:Label id="name" runat="server" ReadOnly="True" DataField="studentName"></asp:Label>
             <br />
             <br />

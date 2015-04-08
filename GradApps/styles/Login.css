@@ -1,0 +1,35 @@
+﻿.container1 {
+    background-color: white;
+	padding: 10px;
+    border: 1px solid #cdcdcd;
+    float:left;
+}
+.container2 {
+    background-color: white;
+	padding: 10px;
+    border: 1px solid #cdcdcd;
+    clear:both;
+    float:none;
+    width: 232px;
+}
+.title {
+    background: rgb(241,241,241);
+    border-bottom: 1px solid #cdcdcd;
+	padding: 1em;
+	line-height: 16px;
+	font-size: 1em;
+	color: #1D1E20;
+	border-bottom: 1px solid #cdcdcd;
+	font-weight: 600;
+    width: 219px;
+}
+.verify
+{
+	width:450px;
+    padding:20px;
+	margin: 4% auto 4% auto; 
+	background: #FFF;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}

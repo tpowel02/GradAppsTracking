@@ -1,9 +1,4 @@
-﻿body {
-	background:url(../images/1.jpg) 100% 100%;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 100%;
-}
-.container1 {
+﻿.container1 {
     background-color: white;
 	padding: 10px;
     border: 1px solid #cdcdcd;
@@ -37,7 +32,7 @@
 	color: #1D1E20;
 	border-bottom: 1px solid #cdcdcd;
 	font-weight: 600;
-    width: 246px;
+    width: 225px;
 }
 .donebutton
 {

@@ -5,19 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder id="head" runat="server">
     <link rel="stylesheet" href="styles/Main.css" type="text/css" />
-    </asp:ContentPlaceHolder>
 </head>
 <body>
     <header><%--<asp:image ImageUrl="images/logo.png" runat="server"></asp:image><asp:image ImageUrl="images/title.png" runat="server"></asp:image>--%></header>
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder id="Main" runat="server">
-<<<<<<< HEAD
-      
-=======
->>>>>>> origin/master
         </asp:ContentPlaceHolder>
     </div>
     </form>
