@@ -71,11 +71,13 @@ public class DB
         StringBuilder query = new StringBuilder();
         DataTable table = new DataTable();
         query.Append("SELECT (student.first_name+' '+student.last_name) AS Student_Name, "
-                    +"grad_app.student_id, major.major_name, grad_app.date_submitted, grad_app.status, "
-                    +"grad_app.advisor_approval, grad_app.dept_chair_approval, "
-                    +"grad_app.dean_approval, grad_app.records_approval ");
+                    + "grad_app.student_id, major.major_name, grad_app.date_submitted, grad_app.status, "
+                    + "grad_app.advisor_approval, grad_app.dept_chair_approval, "
+                    + "grad_app.dean_approval, grad_app.records_approval, "
+                    +"faculty.email ");
         query.Append("FROM [TGA_Project].[dbo].[GRAD_APP]");
         query.Append("JOIN [TGA_Project].[dbo].[student] ON [student].[db_student_id] = [GRAD_APP].[STUDENT_ID]");
+        query.Append("JOIN [TGA_Project].[dbo].[faculty] on [faculty].[faculty_id] = [student].[faculty_id]");
         query.Append("JOIN [TGA_Project].[dbo].[major] on [major].[major_id] = [grad_app].[major_id]");
         query.Append(String.Format("WHERE grad_app.student_id = {0}", g_id));
 

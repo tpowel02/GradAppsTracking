@@ -14,7 +14,10 @@
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder id="Main" runat="server">
+<<<<<<< HEAD
       
+=======
+>>>>>>> origin/master
         </asp:ContentPlaceHolder>
     </div>
     </form>

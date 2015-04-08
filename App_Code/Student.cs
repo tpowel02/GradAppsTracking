@@ -17,6 +17,7 @@ public class Student
         public string status { get; set; }
         //                                                                                         Jarrod Lee - 4/6/15 - Start
         public string msg { get; set; }
+        public string advisorEmail { get; set; }
         //                                                                                         Jarrod Lee - 4/6/15 - Finish
         public string   advisorApproval { get; set; }
         public string   deptApproval { get; set; }
