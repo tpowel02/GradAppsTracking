@@ -1,4 +1,10 @@
-﻿.container1 {
+﻿body
+{
+	background:url(../images/1.jpg) 100% 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+}
+.container1 {
 	padding: 10px;
     border: 1px solid #cdcdcd;
     float:left;

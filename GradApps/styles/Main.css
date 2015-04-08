@@ -1,10 +1,10 @@
-﻿body 
+﻿body
 {
 	background:url(../images/1.jpg) 100% 100%;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
 }
-.bluebutton 
+.bluebutton
 {
 	background: rgb(43,163,255);
 	background: -moz-radial-gradient(center, ellipse cover,  rgb(43,163,255) 0%, rgb(50,171,253) 3%, rgb(54,175,252) 6%, rgb(58,177,247) 13%, rgb(54,165,233) 29%, rgb(43,132,195) 61%, rgb(36,110,169) 87%, rgb(34,105,165) 90%, rgb(31,96,156) 94%, rgb(23,73,133) 100%);
