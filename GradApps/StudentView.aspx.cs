@@ -45,7 +45,7 @@ public partial class StudentView : System.Web.UI.Page
 
         if (student.name == null)
         {
-            student.msg = "<font color='red'>** Application Not Submitted **</font>";
+            student.msg = "<font color='red'>~ Application Not Submitted ~</font>";
             msg.Text = student.msg;
         } 
         if (DB.g_id == 0)
