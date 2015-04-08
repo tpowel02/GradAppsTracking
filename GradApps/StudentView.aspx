@@ -7,7 +7,7 @@
 <div class="verify">
         <div class="title">Your Application Status</div>
         <br />
-        <div class="container2" style="width: 200px;margin-bottom:10px">
+        <div class="container2">
            Welcome <asp:Label id="name" runat="server" ReadOnly="True" DataField="studentName"></asp:Label>
             <br />
             <br />

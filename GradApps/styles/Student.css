@@ -23,6 +23,10 @@
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
+#msg 
+{
+    clear:both;
+}
 .verify
 {
 	width:222px;
