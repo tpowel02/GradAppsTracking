@@ -18,19 +18,19 @@
            Status: <asp:Label id="status" runat="server" ReadOnly="True" DataField="status" ></asp:Label>
             <br />
             <br />
-            <asp:Image ID="imgAdvisor" runat="server" ImageUrl="~/images/cross-icon.gif" />
+            <asp:Image ID="imgAdvisor" runat="server" ImageUrl="images/cross-icon.gif" />
             <asp:Label ID="Label1" runat="server" Text=" Advisor Approval"></asp:Label>
             <br />
             <br />
-            <asp:Image ID="imgDept" runat="server" ImageUrl="~/images/cross-icon.gif" />
+            <asp:Image ID="imgDept" runat="server" ImageUrl="images/cross-icon.gif" />
             <asp:Label ID="Label2" runat="server" Text=" Head of Dept. Approval"></asp:Label>
             <br />
             <br />
-            <asp:Image ID="imgDean" runat="server" ImageUrl="~/images/cross-icon.gif" />
+            <asp:Image ID="imgDean" runat="server" ImageUrl="images/cross-icon.gif" />
             <asp:Label ID="Label3" runat="server" Text=" Dean Approval"></asp:Label>
             <br />
             <br />
-            <asp:Image ID="imgRecords" runat="server" ImageUrl="~/images/cross-icon.gif" />
+            <asp:Image ID="imgRecords" runat="server" ImageUrl="images/cross-icon.gif" />
             <asp:Label ID="Label4" runat="server" Text=" Records Office Finalized"></asp:Label>
             <br />
             <br />

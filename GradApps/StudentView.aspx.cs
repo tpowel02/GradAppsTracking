@@ -68,13 +68,13 @@ public partial class StudentView : System.Web.UI.Page
         msg.Text = student.msg;
 
         if (student.advisorApproval == "Y")
-            imgAdvisor.ImageUrl = "~/images/tick-icon.gif";
+            imgAdvisor.ImageUrl = "images/tick-icon.gif";
         if (student.deptApproval == "Y")
-            imgDept.ImageUrl = "~/images/tick-icon.gif";
+            imgDept.ImageUrl = "images/tick-icon.gif";
         if (student.deanApproval == "Y")
-            imgDean.ImageUrl = "~/images/tick-icon.gif";
+            imgDean.ImageUrl = "images/tick-icon.gif";
         if (student.recordsApproval == "Y")
-            imgRecords.ImageUrl = "~/images/tick-icon.gif";
+            imgRecords.ImageUrl = "images/tick-icon.gif";
        
     }
     protected void done_Click(object sender, EventArgs e)
