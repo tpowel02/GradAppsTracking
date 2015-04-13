@@ -55,7 +55,7 @@ public partial class StudentView : System.Web.UI.Page
         }
         else
         {
-            student.msg = "<font color='red'></font>";
+            student.msg = "";
             msg.Text = student.msg;
         }
 
