@@ -29,8 +29,8 @@ public partial class StudentView : System.Web.UI.Page
             student.deptApproval    = row[6].ToString();
             student.deanApproval    = row[7].ToString();
             student.recordsApproval = row[8].ToString();
-            student.advisorEmail  = row[9].ToString();
-            student.msg = " ";
+            student.advisorEmail    = row[9].ToString();
+            student.msg             = " ";
         }
         _list.Add(student);
 
