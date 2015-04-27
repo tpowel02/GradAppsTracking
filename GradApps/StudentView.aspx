@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="StudentView.aspx.cs" Inherits="StudentView" %>
 
+<asp:Content ContentPlaceHolderID="Head" runat="server">
+    <asp:Image ID="logo" runat="server" ImageUrl="~/images/logo.png" />
+</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" Runat="Server">
     <link rel="stylesheet" href="styles/Student.css" type="text/css" />
 <div class="verify">
