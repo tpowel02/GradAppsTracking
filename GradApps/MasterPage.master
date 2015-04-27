@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/Main.css" type="text/css" />
 </head>
 <body>
-    <header><%--<asp:image ImageUrl="images/logo.png" runat="server"></asp:image><asp:image ImageUrl="images/title.png" runat="server"></asp:image>--%></header>
+    <header><asp:image ImageUrl="images/logo.png" runat="server"></asp:image><asp:image ImageUrl="images/title.png" runat="server"></asp:image>></header>
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder id="Main" runat="server">

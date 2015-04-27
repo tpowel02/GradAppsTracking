@@ -1,9 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="StudentLogin.aspx.cs" Inherits="StudentLogin" %>
 
-<asp:Content ContentPlaceHolderID="Head" runat="server">
-    <asp:Image ID="logo" runat="server" ImageUrl="~/images/logo.png" />
-</asp:Content>
-
 <asp:Content ContentPlaceHolderID="Main" runat="server">
     <link rel="stylesheet" href="styles/Login.css" type="text/css" />
     <div class="verify" style="width:235px;height:240px">
